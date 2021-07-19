@@ -177,6 +177,7 @@ class ListContact extends Component {
 
         return (
             <React.Fragment>
+
                 <Toast ref={(el) => this.toast = el} />
 
                 <Card style={{ marginTop: '0.25em', marginBottom: '0.25em', marginRight: '0.5em', marginLeft: '0.5em', height: '37.75em' }} >
@@ -232,6 +233,7 @@ class ListContact extends Component {
                         {this.state.contact && <span>Are you sure you want to delete <b>{this.state.contact.contactName}</b>?</span>}
                     </div>
                 </Dialog>
+
             </React.Fragment >
         );
     }
